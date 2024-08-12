@@ -1,0 +1,49 @@
+Program:8
+count1=0
+count=0
+
+stu=int(input("\nEnter Number of Student:"))
+for i in range(0,stu):
+    m1=int(input("Enter marks1:"))
+    
+    if(m1>=40 ):
+        count=count+1;
+       # print("Passde Student Count:",count)
+    else:
+        count1=count1+1
+       # print("Fail count:",count1)
+        
+if(count>0):
+    student=count*100/stu;
+    print("Passde Student:",student)
+else:
+    print("All Student are Fail...!")
+
+
+program:6
+
+def greek():
+    
+    En=input("Enter Roll Number:")
+    num=En[0:2]
+    if(num=="cs" or num=="CS" or num=="Cs" or num=="cS"):
+                 print("Student is a CS Depaetment")
+    else:
+                 print("Student is not CS Depaetment")
+
+
+
+greek()
+
+
+
+
+program:3
+def greek():
+    st="24mca41GujratVidyapith"
+    print("Year is:",st[0:2])
+    print("Depaetment is:",st[2:5])
+    print("Roll Number:",st[5:7])
+    print("Collge Name:",st[7:22])
+    
+greek()
