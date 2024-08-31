@@ -1,12 +1,15 @@
 #Find brithdays in a month using dictionary
 bri={'praveen':'03/08/2004',
       'vikram':'05/06/2005',
-    'manish':'12/05/2006'}
+    'manish':'12/12/2006',
+    'raj':'22/10/21'}
 month=input("Enter brithday month(mm):")
+count=0
 for name,bday in bri.items():
-    bday_month=bday[3:5]
-    if bday_month==month:
+    if bday[3:5]==month:
         print(name)
-    else:
-        print("Data Not Found..!");
+        count=count+1
         break
+
+if(count==0):
+    print("Data NOt Found..!")  
